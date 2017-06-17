@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Space Traveler</string>
+    <string name="airplane_257_2_m_s">Airplane = 257.2 m/s</string>
+    <string name="cheetah_33_3_m_s">Cheetah = 33.3 m/s</string>
+    <string name="human_12_4_m_s">Human = 12.4 m/s</string>
+    <string name="snail_0_001_m_s">Snail = 0.001 m/s</string>
+    <string name="benchmark_speeds">Benchmark Speeds</string>
+    <string name="continues">Continue</string>
+    <string name="input_speed_in_m_s">Input speed in m/s</string>
+    <string name="light_299_792_458_m_s">Light = 299,792,458 m/s</string>
+    <string name="juno_73_661_1_m_s">Juno = 73,661.1 m/s</string>
+    <string name="sound_340_3_m_s">Sound = 340.3 m/s</string>
+</resources>
