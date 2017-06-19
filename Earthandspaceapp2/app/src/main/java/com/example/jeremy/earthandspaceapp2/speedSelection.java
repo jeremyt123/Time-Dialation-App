@@ -22,7 +22,7 @@ public class speedSelection extends AppCompatActivity {
         continueButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(speedSelection.this, DestinationSelectorEmpty.class));
+                startActivity(new Intent(speedSelection.this, Destinationselector.class));
             }
         });
     }
