@@ -24,7 +24,8 @@
             android:name=".DestinationSelectorBasic"
             android:label="@string/title_activity_destination_selector_basic"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".DestinationSelectorEmpty"></activity>
+        <activity android:name=".DestinationSelectorEmpty" />
+        <activity android:name=".SunFacts"></activity>
     </application>
 
 </manifest>

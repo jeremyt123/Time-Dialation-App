@@ -1,5 +1,6 @@
 package com.example.jeremy.earthandspaceapp2;
 
+import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -9,6 +10,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 public class Destinationselector extends AppCompatActivity {
@@ -22,6 +24,17 @@ public class Destinationselector extends AppCompatActivity {
 
         ImageView backgroundImage = (ImageView) findViewById(R.id.backgroundImage);
         backgroundImage.setImageBitmap(decodeSampledBitmapFromResource(getResources(), R.drawable.appbackgroundweb, 500, 500));
+        configuresunButton();
+    }
+
+    private void configuresunButton(){
+        Button sunButton = (Button) findViewById(R.id.sunButton);
+        sunButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Destinationselector.this, SunFacts.class));
+            }
+        });
     }
     //formatting large image
     private static int calculateInSampleSize(BitmapFactory.Options options, int reqWidth, int reqHeight){
