@@ -10,12 +10,14 @@ import android.widget.TextView;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
+import java.math.RoundingMode;
+import java.text.DecimalFormat;
 
 public class SunFacts extends AppCompatActivity {
 
     TextView sunTFECalc;
     TextView sunTFSCalc;
-    BigDecimal one = new BigDecimal("1");
+
     BigDecimal secInYear = new BigDecimal("31536000");
     BigDecimal sunDistance = new BigDecimal("150000000000");
     double speedLight = 299792458;
@@ -36,13 +38,15 @@ public class SunFacts extends AppCompatActivity {
         //Calculating time for earth
         sunTFECalc = (TextView) findViewById(R.id.sunTFECalc);
 
+        DecimalFormat df = new DecimalFormat("###.00000");
+
         //converting the time for earth to double to ease calculation
         double sunTFSYearDouble = sunTFSYear.doubleValue();
         //calculating time dialation
-        double sunTFEYear = sunTFSYearDouble / (1 - Math.sqrt((Math.pow(speedInput, 2) / Math.pow(speedLight, 2))));
+        double sunTFEYear = (sunTFSYearDouble / (1 - Math.sqrt((Math.pow(speedInput, 2) / Math.pow(speedLight, 2)))));
 
 
-        sunTFECalc.setText(sunTFEYear + " Years");
+        sunTFECalc.setText(df.format(sunTFEYear) + " Years");
     }
 
 }
