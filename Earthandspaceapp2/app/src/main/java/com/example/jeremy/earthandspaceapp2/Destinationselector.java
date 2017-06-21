@@ -24,15 +24,50 @@ public class Destinationselector extends AppCompatActivity {
 
         ImageView backgroundImage = (ImageView) findViewById(R.id.backgroundImage);
         backgroundImage.setImageBitmap(decodeSampledBitmapFromResource(getResources(), R.drawable.appbackgroundweb, 500, 500));
+    //running the buttons on startup
         configuresunButton();
+        configureissButton();
+        configuremoonButton();
+        configuremarsButton();
     }
-
+    //creating the button methods
     private void configuresunButton(){
         Button sunButton = (Button) findViewById(R.id.sunButton);
         sunButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Destinationselector.this, SunFacts.class));
+            }
+        });
+    }
+
+    private void configureissButton(){
+        Button issButton = (Button) findViewById(R.id.issButton);
+        issButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Destinationselector.this, ISSFacts.class));
+            }
+        });
+    }
+
+    private void configuremoonButton(){
+        Button moonButton = (Button) findViewById(R.id.moonButton);
+        moonButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+                    public  void onClick(View v) {
+                        startActivity(new Intent(Destinationselector.this, MoonFacts.class));
+            }
+
+        });
+    }
+
+    private void configuremarsButton(){
+        Button marsButton = (Button) findViewById(R.id.marsButton);
+        marsButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Destinationselector.this, MarsFacts.class));
             }
         });
     }

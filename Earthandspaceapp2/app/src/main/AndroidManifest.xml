@@ -20,12 +20,10 @@
             android:name=".Destinationselector"
             android:label="@string/title_activity_destinationselector"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".DestinationSelectorBasic"
-            android:label="@string/title_activity_destination_selector_basic"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".DestinationSelectorEmpty" />
-        <activity android:name=".SunFacts"></activity>
+        <activity android:name=".SunFacts" />
+        <activity android:name=".ISSFacts" />
+        <activity android:name=".MoonFacts" />
+        <activity android:name=".MarsFacts"></activity>
     </application>
 
 </manifest>

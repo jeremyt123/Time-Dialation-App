@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.jeremy.earthandspaceapp2.SunFacts">
-
+    tools:context="com.example.jeremy.earthandspaceapp2.MarsFacts">
     <ImageView
         android:id="@+id/backgroundImage"
         android:layout_width="wrap_content"
@@ -16,12 +15,12 @@
         android:paddingBottom="60dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/sunpageweb"
+        app:srcCompat="@drawable/marsweb"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintTop_creator="1" />
 
     <TextView
-        android:id="@+id/sunTFE"
+        android:id="@+id/marsTFE"
         android:textSize="16sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -37,7 +36,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginLeft="40dp" />
     <TextView
-        android:id="@+id/sunTFECalc"
+        android:id="@+id/marsTFECalc"
         android:textSize="16sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -54,7 +53,7 @@
         android:layout_marginLeft="40dp" />
 
     <TextView
-        android:id="@+id/sunTFS"
+        android:id="@+id/marsTFS"
         android:textSize="16sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -70,7 +69,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginLeft="40dp" />
     <TextView
-        android:id="@+id/sunTFSCalc"
+        android:id="@+id/marsTFSCalc"
         android:textSize="16sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -85,7 +84,4 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginLeft="40dp" />
-
-
 </android.support.constraint.ConstraintLayout>
-
