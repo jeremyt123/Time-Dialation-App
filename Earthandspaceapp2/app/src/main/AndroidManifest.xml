@@ -23,7 +23,8 @@
         <activity android:name=".SunFacts" />
         <activity android:name=".ISSFacts" />
         <activity android:name=".MoonFacts" />
-        <activity android:name=".MarsFacts"></activity>
+        <activity android:name=".MarsFacts" />
+        <activity android:name=".cometFacts"></activity>
     </application>
 
 </manifest>

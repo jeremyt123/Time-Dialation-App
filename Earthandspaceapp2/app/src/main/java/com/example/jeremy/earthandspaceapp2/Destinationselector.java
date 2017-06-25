@@ -29,6 +29,7 @@ public class Destinationselector extends AppCompatActivity {
         configureissButton();
         configuremoonButton();
         configuremarsButton();
+        configurecometButton();
     }
     //creating the button methods
     private void configuresunButton(){
@@ -68,6 +69,16 @@ public class Destinationselector extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Destinationselector.this, MarsFacts.class));
+            }
+        });
+    }
+
+    private void configurecometButton(){
+        Button cometButton = (Button) findViewById(R.id.cometButton);
+        cometButton.setOnClickListener(new View.OnClickListener(){
+          @Override
+                  public void onClick(View v){
+                startActivity(new Intent(Destinationselector.this, cometFacts.class));
             }
         });
     }

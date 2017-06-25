@@ -1,44 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
+    android:orientation="vertical"
     tools:context="com.example.jeremy.earthandspaceapp2.Destinationselector">
 
-    <Button
-        android:id="@+id/sunButton"
-        android:layout_width="192dp"
-        android:layout_height="164dp"
-        android:layout_marginLeft="110dp"
-        android:layout_marginStart="110dp"
-        android:layout_marginTop="15dp"
-        android:background="@android:color/transparent"/>
-    <Button
-        android:id="@+id/issButton"
-        android:layout_width="119dp"
-        android:layout_height="90dp"
-        android:layout_marginLeft="150dp"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="340dp"
-        android:background="@android:color/transparent"/>
-    <Button
-        android:id="@+id/moonButton"
-        android:layout_width="119dp"
-        android:layout_height="90dp"
-        android:layout_marginLeft="150dp"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="450dp"
-        android:background="@android:color/transparent"/>
-    <Button
-        android:id="@+id/marsButton"
-        android:layout_width="119dp"
-        android:layout_height="90dp"
-        android:layout_marginLeft="150dp"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="580dp"
-        android:background="@android:color/transparent"/>
 
     <ScrollView
         android:layout_width="fill_parent"
@@ -46,26 +15,67 @@
         android:fillViewport="false"
         android:orientation="vertical">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="3000dp"
-            android:orientation="vertical">
-
+            android:layout_height="match_parent">
             <ImageView
-                android:id="@+id/backgroundImage"
-                android:layout_width="match_parent"
-                android:layout_height="2290dp"
-                android:adjustViewBounds="false"
-                android:contentDescription="@null"
-                android:scaleType="fitStart"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/appbackgroundweb"
-                tools:layout_constraintLeft_creator="1"
-                tools:layout_constraintTop_creator="1" />
+            android:id="@+id/backgroundImage"
+            android:layout_width="match_parent"
+            android:layout_height="2290dp"
+            android:adjustViewBounds="false"
+            android:contentDescription="@null"
+            android:scaleType="fitStart"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/appbackgroundweb"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintTop_creator="1" />
 
-        </LinearLayout>
+            <Button
+                android:id="@+id/sunButton"
+                android:layout_width="192dp"
+                android:layout_height="164dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/transparent"/>
+            <Button
+                android:id="@+id/issButton"
+                android:layout_width="119dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="340dp"
+                android:background="@android:color/transparent"/>
+            <Button
+                android:id="@+id/moonButton"
+                android:layout_width="119dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="450dp"
+                android:background="@android:color/transparent"/>
+            <Button
+                android:id="@+id/marsButton"
+                android:layout_width="119dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="580dp"
+                android:background="@android:color/transparent"/>
+            <Button
+                android:id="@+id/cometButton"
+                android:layout_width="119dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="720dp"
+                android:background="@android:color/transparent"/>
+
+        </RelativeLayout>
     </ScrollView>
 
 
-</android.support.design.widget.CoordinatorLayout>
+
+
+</LinearLayout>
