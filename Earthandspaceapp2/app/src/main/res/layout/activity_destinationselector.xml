@@ -27,7 +27,7 @@
             android:scaleType="fitStart"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/appbackgroundweb"
+            app:srcCompat="@drawable/appbackgroundbrightweb"
             tools:layout_constraintLeft_creator="1"
             tools:layout_constraintTop_creator="1" />
 
@@ -70,6 +70,38 @@
                 android:layout_marginLeft="150dp"
                 android:layout_marginStart="150dp"
                 android:layout_marginTop="720dp"
+                android:background="@android:color/transparent"/>
+            <Button
+                android:id="@+id/proximaButton"
+                android:layout_width="139dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="140dp"
+                android:layout_marginStart="140dp"
+                android:layout_marginTop="920dp"
+                android:background="@android:color/transparent"/>
+            <Button
+                android:id="@+id/polarisButton"
+                android:layout_width="139dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="140dp"
+                android:layout_marginStart="140dp"
+                android:layout_marginTop="1280dp"
+                android:background="@android:color/transparent"/>
+            <Button
+                android:id="@+id/andromedaButton"
+                android:layout_width="269dp"
+                android:layout_height="360dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="1580dp"
+                android:background="@android:color/transparent"/>
+            <Button
+                android:id="@+id/edgeButton"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="2080dp"
                 android:background="@android:color/transparent"/>
 
         </RelativeLayout>

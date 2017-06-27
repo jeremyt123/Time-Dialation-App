@@ -24,7 +24,11 @@
         <activity android:name=".ISSFacts" />
         <activity android:name=".MoonFacts" />
         <activity android:name=".MarsFacts" />
-        <activity android:name=".cometFacts"></activity>
+        <activity android:name=".cometFacts" />
+        <activity android:name=".proximaFacts" />
+        <activity android:name=".polarisFacts" />
+        <activity android:name=".andromedaFacts" />
+        <activity android:name=".edgeFacts"></activity>
     </application>
 
 </manifest>

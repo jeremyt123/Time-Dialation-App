@@ -30,6 +30,10 @@ public class Destinationselector extends AppCompatActivity {
         configuremoonButton();
         configuremarsButton();
         configurecometButton();
+        configureproximaButton();
+        configurepolarisButton();
+        configureandromedaButton();
+        configureedgeButton();
     }
     //creating the button methods
     private void configuresunButton(){
@@ -79,6 +83,46 @@ public class Destinationselector extends AppCompatActivity {
           @Override
                   public void onClick(View v){
                 startActivity(new Intent(Destinationselector.this, cometFacts.class));
+            }
+        });
+    }
+
+    private void configureproximaButton() {
+        Button proximaButton = (Button) findViewById(R.id.proximaButton);
+        proximaButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                startActivity(new Intent(Destinationselector.this, proximaFacts.class));
+            }
+        });
+    }
+
+    private void configurepolarisButton() {
+        Button polarisButton = (Button) findViewById(R.id.polarisButton);
+        polarisButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick (View v) {
+                startActivity(new Intent(Destinationselector.this, polarisFacts.class));
+            }
+        });
+    }
+
+    private void configureandromedaButton(){
+        final Button andromedaButton = (Button) findViewById(R.id.andromedaButton);
+        andromedaButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick (View v){
+                startActivity(new Intent(Destinationselector.this, andromedaFacts.class));
+            }
+        });
+    }
+
+    private void configureedgeButton(){
+        Button edgeButton = (Button) findViewById(R.id.edgeButton);
+        edgeButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                startActivity(new Intent(Destinationselector.this, edgeFacts.class));
             }
         });
     }
